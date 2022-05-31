@@ -128,7 +128,7 @@ def new_member(update, context):
 			context.bot.leave_chat(update.message.chat.id)
 
 TOKEN = os.environ.get("TOKEN")
-PORT = os.environ.get("PORT", "8443")
+PORT = os.environ.get("PORT", "443")
 APP_NAME = os.environ.get("APP_NAME")
 updater = Updater(TOKEN, use_context = True)
 
